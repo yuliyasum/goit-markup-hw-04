@@ -38,7 +38,7 @@
     
   /*header*/
   .header {
-    padding: 0px 0;
+      padding: 0px 0;
       border-bottom: 1px solid #ECECEC;
   }
   .header .container {
@@ -127,6 +127,7 @@
   
   .navigation-list-link:hover,
   .navigation-list-link:focus,
+  .navigation-list-link:active,
   .navigation-list-link-p:hover,
   .navigation-list-link-p:focus,
   .navigation-list-link-p:active,
@@ -142,9 +143,24 @@
   }
 
  
-  .contact-list-item:hover .contact-list-svg {
-      fill: var(--accent-color);}
-     
+  .contact-list-item:hover .contact-list-svg,
+  .contact-list-item:focus .contact-list-svg,
+  .contact-list-item:active .contact-list-svg
+   
+   {
+      fill: var(--accent-color);} 
+   
+  .contact-list-item:hover .address-light-theme-mail,
+  .contact-list-item:focus .address-light-theme-mail,
+  .contact-list-item:active .address-light-theme-mail
+       { color: var(--accent-color);
+       }
+ .contact-list-item:hover .address-light-theme-tel,
+ .contact-list-item:focus .address-light-theme-tel,
+ .contact-list-item:active .address-light-theme-tel
+     { color: var(--accent-color);
+            }
+
     .contact-list-link {
         display: inline-flex;
         align-items: center;
@@ -152,6 +168,9 @@
       
         margin-right: 10px;
     }
+   
+        
+
   .contact-list-svg {
       fill: #757575;
   }
@@ -185,6 +204,18 @@ background-color: var(--secondary-color);
 .button:focus {
 color: var(--primary-color);
 background-color: var(--accent-color);}
+
+.button-a {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.63;
+padding: 10px 22px;
+text-align: center;
+border-radius: 4px;
+
+  color: var(--primary-color);
+background-color: var(--accent-color);}
+
 
 /*end button*>
 
